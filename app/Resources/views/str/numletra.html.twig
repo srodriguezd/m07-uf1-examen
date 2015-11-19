@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {{ parent() }}
+    <div><a>Escribe primero una palabra y luego un numero</a>
+        <form id ="fr" method="post" action="{{ path('app_str_doNumletra') }}">
+            <input type="text" name="op1"><br/>
+            <input type="number" name="op2"><br/>
+            <input type="submit" value="posicion"><br/>
+        </form>
+
+    </div>
+
+{% endblock %}
+
+
+
+
+
+{% block stylesheets %}
+    <style>
+        div{
+            font-size: 20px;
+            color: black;
+            margin-left: 15px;
+        }
+        a{
+            font-size: 15px;
+
+        }
+    </style>
+{% endblock %}

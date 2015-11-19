@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {{ parent() }}
+    <div>
+        <form id ="fr" method="post" action="{{ path('app_str_doMinusculas') }}">
+            <input type="text" name="op1"><br/>
+            <input type="submit" value="minusculas"><br/>
+        </form>
+
+    </div>
+
+{% endblock %}
+
+
+
+
+
+
+{% block stylesheets %}
+    <style>
+        div{
+            font-size: 20px;
+            color: black;
+            margin-left: 15px;
+        }
+    </style>
+{% endblock %}

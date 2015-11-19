@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {{ parent() }}
+    <div>
+
+        <span>{{ op1 }} = </span>  <span> {{ result }}</span>
+
+    </div>
+
+{% endblock %}
+
+
+
+
+
+{% block stylesheets %}
+    <style>
+        div{
+            font-size: 20px;
+            color: black;
+            margin-left: 15px;
+        }
+    </style>
+{% endblock %}
